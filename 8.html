@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>TWO NUMBER</h2>
+   <li> <button id="sum" onclick="mouse1()">sum</button></li>
+   <li> <button id="diff"onclick="mouse2()">difference</button></li>
+   <li> <button id="mul"onclick="mouse3()">multiplication</button></li>
+   <li> <button id="div"onclick="mouse4()">division</button></li>
+   
+    <script>
+        
+    let a=prompt("enter 1st number");
+    let b=prompt("enter a 2nd number");
+    function mouse1(){
+    let sum=Number(a)+Number(b);
+    document.getElementById("sum").value=alert(sum);
+    }
+    function mouse2(){
+    let diff=Number(a)-Number(b);
+    document.getElementById("diff").value=alert(diff);
+    }
+    function mouse3(){
+    let mul=Number(a)*Number(b);
+    document.getElementById("mul").value=alert(mul);
+    }
+    function mouse4(){
+    let div=Number(a)/Number(b);
+    
+    document.getElementById("div").value=alert(div);
+
+    
+        }
+       
+</script>
+</body>
+</html>

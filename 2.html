@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 ALIGN="CENTER">THERMOMETER</h1>
+    <li>CONVERT CELSIUS TO FAHRENHEIT</li>
+    <input type="number" placeholder="temperatureincelsius" id="c">
+    
+    <input type="number" name="" id="f" placeholder="temperaturein fahrenheit">
+    <li>CONVERT FAHRENHEIT TO CELSIUS</li>
+    <input type="number" placeholder="temperaturein fahrenheit" id="f1">
+    
+    <input type="number" name="" id="c1" placeholder="temperatureincelsius">
+    <script>
+        function thermometer(){
+            let celsius=document.getElementById("c").value;
+            let total=Number(celsius*9/5+32);
+            document.getElementById("f").value=total;
+            let fahrenheit=document.getElementById("f1").value;
+            let total2=Number(fahrenheit*5/9-32*5/9);
+            document.getElementById("c1").value=total2;
+        }
+        setInterval(thermometer);
+    </script>
+</body>
+</html>
