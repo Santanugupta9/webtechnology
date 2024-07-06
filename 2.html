@@ -4,27 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   <style>
+    .header{
+        display:flex;
+        
+        background-color: red;
+        color:white;
+
+    }
+    a.link{
+        color:white;
+    }
+    a.hover{
+        color:white;
+    }
+   
+    p{
+        margin-right: 20px;
+
+    }
+    .head{
+       background-image:url("https://www.pajak.com/storage/2021/08/COVID-19-1-2.jpg")
+    }
+    .paragraph{
+        display:flex;
+    }
+    .what{
+        background-color: rgb(238, 130, 91);
+        height:150px;
+        margin-right: 10px;
+    }
+    .type{
+        margin-left: 10px;
+        background-color: rgb(238, 130, 91);
+        height:150px;
+    }
+    .footer{
+        background-color: rgb(176, 173, 173);
+
+    }
+   </style>
 </head>
 <body>
-    <h1 ALIGN="CENTER">THERMOMETER</h1>
-    <li>CONVERT CELSIUS TO FAHRENHEIT</li>
-    <input type="number" placeholder="temperatureincelsius" id="c">
-    
-    <input type="number" name="" id="f" placeholder="temperaturein fahrenheit">
-    <li>CONVERT FAHRENHEIT TO CELSIUS</li>
-    <input type="number" placeholder="temperaturein fahrenheit" id="f1">
-    
-    <input type="number" name="" id="c1" placeholder="temperatureincelsius">
-    <script>
-        function thermometer(){
-            let celsius=document.getElementById("c").value;
-            let total=Number(celsius*9/5+32);
-            document.getElementById("f").value=total;
-            let fahrenheit=document.getElementById("f1").value;
-            let total2=Number(fahrenheit*5/9-32*5/9);
-            document.getElementById("c1").value=total2;
-        }
-        setInterval(thermometer);
-    </script>
+    <div class="head">
+    <h1 align="center">E-commerce</h1>
+    <p align="center">E-commerce electonical buying and sellingog goods and sevices,or the transmit of funds or data,over an electronic networkprimarily internet.These business transaction either as a business-to-business(B2B),consumer-to-consumer or consumer-to-consumer.</p>
+</div>
+    <fieldset class="header">
+        <p><a href="" color="white">Home</a></p>
+        <p><a href="">Gallery</a></p>
+        <p><a href="">Products</a></p>
+        <p><a href="">Contact</a></p>
+     </fieldset>
+     <div class="paragraph">
+     <div class="what">
+        <h2>What is ?</h2>
+        <p>Lorem ipsum dolor sit aaspernatur!</p>
+     </div>
+    <div class="e">
+        <h2>E-commerce</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, quia corporis iste ipsa fuga 
+            perferendis quam consequatur a quis perspiciatis. Odio aliquam ut corrupti voluptas voluptate, accusantium nostrum dolorem rem!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque animi, voluptates quas laboriosam in at dolorum, quis suscipit inventore vel provident aliquid? In, numquam assumenda ex pariatur eos nulla alias?</p>
+    </div>
+    <div class="type">
+        <h2>Types</h2>
+        <p>Lorem ipsum dolor sit </p>
+    </div>
+</div>
+<fieldset class="footer">
+<footer align="center">
+   Copyright&copy; www.abc.com ALL rights reversed!
+
+</footer>
+</fieldset>
 </body>
 </html>
