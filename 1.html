@@ -1,16 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let var1="1";
-        let var2="3";
-        let total=Number(var1)+number(var2);
-        total.d
-    </script>
+ <!-- <h1>DOM methods</h1>
+ <h1>1.getElementById</h1> -->
+<div>
+    <h1 id="head">Head</h1>
+    <img src="https://freerangestock.com/sample/130131/red-hair-woman-with-camera-.jpg" alt="" height="100px" id="img">
+    <p class="red">Heading paragraph</p>
+    <ul id="list">
+        <li>Apple</li>
+        <li>Ball</li>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Egg</li>
+    </ul>
+</div>
+<form action="" id="form">
+    <input type="text" name="" id="">
+    <input type="submit" name="" id="">
+</form>
+
+   <script>
+    // getelementbyid use id to access html element
+    //let head=document.getElementById("head");
+   // let head=document.getElementById("head");
+   let image=document.getElementById("img");
+   Red=document.getElementsByClassName("red");
+   Red.style.backgroundColor="red";
+
+    //console.log(head);
+    //head.style.background-color="red";
+   // head.style.cssText="background-color:red;color:white";
+  // head.innerHTML='<i>prince</i>';
+//head(2).style.background-color:"red";
+//image.style.borderRadius="100px";
+   </script>
 </body>
 </html>
